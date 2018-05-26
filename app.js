@@ -3,6 +3,7 @@ window.onload = () => {
        if (frase != ' '  ) {
         character();
         len();
+        space();
        }else{
            alert('error error')
        }
@@ -23,7 +24,16 @@ window.onload = () => {
         console.log('total de caracteres '+ countCaracteres)
     }
    
-  
+   function space(){
+       countSpace = 0;
+       for (let i = 0; i < frase.length; i++) {
+           if (frase.charAt(i) === ' ') {
+               countSpace++;
+           }
+           
+       }
+       console.log('espacios '+ countSpace);
+   }
     
     
 }
